@@ -5,6 +5,7 @@ import ComponentsScreen from './src/screens/ComponentsScreen';
 import ListScreen from './src/screens/ListScreen';
 import ImageScreenjs from './src/screens/ImageScreen.js';
 import CounterScreen from './src/screens/CounterScreen.js';
+import ColorScreen from './src/screens/ColorScreen.js';
 
 
 // navigator is what allows us to change content
@@ -14,7 +15,8 @@ const navigator = createStackNavigator(
     Components: ComponentsScreen,
     List: ListScreen,
     Imagescrn: ImageScreenjs,
-    Counter: CounterScreen
+    Counter: CounterScreen,
+    Color: ColorScreen
   },
   {
     initialRouteName: 'Home',

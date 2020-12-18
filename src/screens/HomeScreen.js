@@ -19,6 +19,9 @@ const HomeScreen = ({navigation}) => {
        <Button  title='Go to List Counter'
                   // this is the way we navigate (like a router)
                  onPress={() => navigation.navigate('Counter')}   />   
+       <Button  title='Go to Color Screen'
+                  // this is the way we navigate (like a router)
+                 onPress={() => navigation.navigate('Color')}   />   
      
   </View>
   );
