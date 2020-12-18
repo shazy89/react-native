@@ -11,6 +11,7 @@ const introduce = <Text style={styles.textStyle}>Hi. My name is {me.name} {me.la
    return (
        <View> 
             {introduce}
+            <Text style={styles.text2}>Got it</Text>
        </View>
    );
 };
@@ -21,17 +22,10 @@ const styles = StyleSheet.create({
         fontSize: 30,
         color: 'red'
     },
-    container: {
-        paddingTop: 50,
-      },
-      tinyLogo: {
-        width: 50,
-        height: 50,
-      },
-      logo: {
-        width: 66,
-        height: 58,
-      },
+    text2: {
+       fontSize: 20,
+       color: 'blue'
+     }
 })
 
 export default ComponentsScreen
