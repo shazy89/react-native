@@ -16,6 +16,9 @@ const HomeScreen = ({navigation}) => {
        <Button  title='Go to List Image-screen'
                   // this is the way we navigate (like a router)
                  onPress={() => navigation.navigate('Imagescrn')}   />   
+       <Button  title='Go to List Counter'
+                  // this is the way we navigate (like a router)
+                 onPress={() => navigation.navigate('Counter')}   />   
      
   </View>
   );
