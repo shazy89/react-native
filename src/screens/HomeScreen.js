@@ -4,7 +4,7 @@ import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 const HomeScreen = ({navigation}) => {
 
   return (
-    <View style={{flex:1, alignItems: "center", marginTop: 20}}>
+    <View style={{flex:1, alignItems: "center"}}>
       <Text style={styles.text} adjustsFontSizeToFit={true} numberOfLines={1}>Hi There</Text>
        <Button  title='Go to Components Demo'
                   // this is the way we navigate (like a router)
