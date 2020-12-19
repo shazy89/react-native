@@ -1,21 +1,41 @@
 import React from 'react';
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Button } from "react-native";
 
 
-const CounterScreen = () => {
+const ColourCounter = ({color, onIncrese, onDecrese }) => {
 
+    return (
+     <View> 
+         <Text> {color}</Text>
+            <Button  title={`Increse ${color}`}
+                      onPress={() =>  onIncrese()  } />  
+             <Button    title={`Decrese ${color}`}
+                        onPress={() => onDecrese() } />  
+        </View>
+       );
+    };
+                     
+               
+                      
+                        
+               
+                   
+                 
+       
+          
+ 
 
-   return (
-       <View> 
-            <Text> Current Count</Text>
-       </View>
-   );
-};
+         
+      
 
       
 
 const styles = StyleSheet.create({
-
+    counter: {
+        justifyContent: 'center',
+        alignItems: "center",
+        flex: 1
+    }
 })
 
-export default CounterScreen
+export default ColourCounter;

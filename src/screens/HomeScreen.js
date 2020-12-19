@@ -22,7 +22,7 @@ const HomeScreen = ({navigation}) => {
        <Button  title='Go to Color Screen'
                   // this is the way we navigate (like a router)
                  onPress={() => navigation.navigate('Color')}   />   
-       <Button  title='Go to Color Screen'
+       <Button  title='Go to Square Screen'
                   // this is the way we navigate (like a router)
                  onPress={() => navigation.navigate('Square')}   />   
      
