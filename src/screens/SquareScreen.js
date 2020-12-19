@@ -2,7 +2,7 @@ import React, {useReducer} from 'react';
 import { Text, StyleSheet, View } from "react-native";
 import ColorCounter from '../components/ColorCounter'
 
-const COLOR_INCREMENT = 15;
+const COLOUR_INCREACSEMENT = 15;
      // how Im going to change that object
 const reducer = (state, action) => {
         //state === {red: number, blue: number, green: number}
@@ -22,7 +22,7 @@ const reducer = (state, action) => {
             default:
                 return state;
         }
-}
+}  
 
 const CounterScreen = () => {
        // dispach is invoking the reducer 
@@ -32,12 +32,12 @@ const CounterScreen = () => {
 
    return (
        <View> 
-          <ColorCounter color={'Red'}   onIncrese={() => dispatch({type: 'change_red', payload: COLOR_INCREMENT }) } 
-                                        onDecrese={() => dispatch({type: 'change_red', payload: -1 * COLOR_INCREMENT }) }/> 
-          <ColorCounter color={'Blue'}  onIncrese={() => dispatch({type: 'change_blue', payload: COLOR_INCREMENT }) } 
-                                        onDecrese={() => dispatch({type: 'change_blue', payload: -1 * COLOR_INCREMENT })}/>
-          <ColorCounter color={'Green'} onIncrese={() => dispatch({type: 'change_green', payload: COLOR_INCREMENT }) } 
-                                        onDecrese={() => dispatch({type: 'change_green', payload: -1 * COLOR_INCREMENT })}/>
+          <ColorCounter color={'Red'}   onIncrese={() => dispatch({type: 'change_red', payload: COLOUR_INCREACSEMENT }) } 
+                                        onDecrese={() => dispatch({type: 'change_red', payload: -1 * COLOUR_INCREACSEMENT }) }/> 
+          <ColorCounter color={'Blue'}  onIncrese={() => dispatch({type: 'change_blue', payload: COLOUR_INCREACSEMENT }) } 
+                                        onDecrese={() => dispatch({type: 'change_blue', payload: -1 * COLOUR_INCREACSEMENT })}/>
+          <ColorCounter color={'Green'} onIncrese={() => dispatch({type: 'change_green', payload: COLOUR_INCREACSEMENT }) } 
+                                        onDecrese={() => dispatch({type: 'change_green', payload: -1 * COLOUR_INCREACSEMENT })}/>
           <View style={{height: 150, width: 150, backgroundColor: `rgb(${red}, ${green}, ${blue})`}} /> 
        </View>
    );
