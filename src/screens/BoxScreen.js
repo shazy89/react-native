@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   //  alignItems: 'flex-end' 'center'  
       flexDirection: 'row', // remember always we have to place on parent element to set up the view
  //   flex direction will change the view horizontaly and verticaly
-      height: 200,
+      height: 100,
       alignItems: 'flex-start', // remember always we have to place on parent element to set up the view
       justifyContent: 'space-between' // remember always we have to place on parent element to set up the view
   },
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     width: 50,
     borderColor: 'red',
     backgroundColor: 'green', 
-    top: 50
+    alignSelf: 'flex-end'
     },
     view6Style: {
     borderWidth: 3,
