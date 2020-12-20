@@ -13,10 +13,12 @@ const [password, setPassword] = useState('')
             autoCapitalize='none'
             autoCorrect={false}
             value={name}
-            placeholder='name'
+            placeholder="Type here!"
             style={styles.textStyle} 
             onChangeText={newValue => setName(newValue)}/>
-           <Text>Your name is:{name}</Text> 
+
+           <Text style={{textAlign: 'center'}}>Your name is:{name}</Text> 
+            
            <Text style={{fontSize: 30}}>Enter Password:</Text>
            <TextInput 
             autoCapitalize='none'
@@ -26,11 +28,20 @@ const [password, setPassword] = useState('')
             placeholder='password'
             style={styles.textStyle} 
             onChangeText={password => setPassword(password)}/>
-             { password.length < 5 ? <Text style={{marginLeft: 10}}>Password must be longer than 5 characters</Text> : null}
+                <Text >{checkLength(password)}</Text>
        </View>
             
    );
 };
+
+const checkLength = (word) => {
+ 
+if(word.length < 5) return 'Password must be longer than 5 characters'
+if(word.length > 5 && word.length < 10) return 'low strength'
+if(word.length > 9 && word.length < 12) return 'medium strength'
+if(word.length > 11 ) return 'strong strength'
+   }
+
 
 const styles = StyleSheet.create({
    textStyle: {

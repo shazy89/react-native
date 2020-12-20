@@ -28,6 +28,9 @@ const HomeScreen = ({navigation}) => {
        <Button  title='Go to Text Screen'
                   // this is the way we navigate (like a router)
                  onPress={() => navigation.navigate('Text')}   />   
+       <Button  title='Go to Box Screen'
+                  // this is the way we navigate (like a router)
+                 onPress={() => navigation.navigate('Box')}   />   
      
   </View>
   );

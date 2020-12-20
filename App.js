@@ -8,7 +8,7 @@ import CounterScreen from './src/screens/CounterScreen.js';
 import SquareScreen from './src/screens/SquareScreen.js';
 import ColorScreen from './src/screens/ColorScreen.js';
 import TextScreen from './src/screens/TextScreen.js';
-
+import BoxScreen from './src/screens/BoxScreen'
 
 
 // navigator is what allows us to change content
@@ -22,6 +22,7 @@ const navigator = createStackNavigator(
     Color: ColorScreen,
     Square: SquareScreen,
     Text: TextScreen,
+    Box: BoxScreen,
   },
   {
     initialRouteName: 'Home',
